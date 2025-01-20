@@ -41,3 +41,7 @@ app.use("/vendor", vendorRoutes);
 app.listen(PORT, () => {
   console.log(`Server started and running at port ${PORT}`);
 });
+
+app.use('/', (req, res) => {
+  res.send("<h1> Welcome to SUBY");
+})
